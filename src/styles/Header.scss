@@ -1,0 +1,60 @@
+@import 'bootstrap';
+@import 'mixin';
+.header {
+    position: relative;
+    z-index: 1;
+    
+    
+    .header__nav {
+        transition: none !important;
+        opacity:100% !important; 
+        display: flex;
+        justify-content: space-around;
+        padding: 40px;
+        .nav__logo {
+            .logo {
+                font-family: 'Cinzel';
+                font-weight: 700;
+                font-size: 20px;
+            }
+        }
+        @include media('max','md'){
+            padding: 20px  !important;
+        }
+        .nav__links {
+            .nav_link { 
+                margin: 0px 5px;
+
+            }
+           
+        }
+     
+ 
+        
+        .nav__sound {
+
+            font-size: 20px;
+            font-family: 'Cinzel';
+            font-weight: 700;
+            .fa-volume-high {
+                margin-right: 10px;
+                cursor: pointer;
+                font-size: 20px;
+            }   
+            .fa-volume-xmark{
+                margin-right: 10px;
+                cursor: pointer;
+                font-size: 20px;
+            }
+        }
+    }
+
+
+    
+}
+
+
+.nav_link:hover{
+    color: goldenrod !important;
+    font-weight: 900;
+}
